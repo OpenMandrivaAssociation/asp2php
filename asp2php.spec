@@ -14,6 +14,7 @@ Source11:	%{name}-16.png
 Source12:	%{name}-32.png
 Source13:	%{name}-48.png
 URL:		http://asp2php.naken.cc/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 asp2php is a program which can help you convert Micro$oft (tm) Active Server
