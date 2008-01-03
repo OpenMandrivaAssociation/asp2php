@@ -53,15 +53,15 @@ install -m644 %{SOURCE12} -D $RPM_BUILD_ROOT%{_iconsdir}/%{name}.png
 install -m644 %{SOURCE13} -D $RPM_BUILD_ROOT%{_liconsdir}/%{name}.png
 
 
-install -d $RPM_BUILD_ROOT%{_menudir}
-cat > $RPM_BUILD_ROOT%{_menudir}/gtkasp2php <<EOF
-?package(gtk%{name}):\
-command="%{_bindir}/gtk%{name}"\
-title="Asp2Php"\
-longtitle="Gtk frontend to asp2php"\
-needs="x11"\
-icon="%{name}.png"\
-section="Applications/Development/Tools"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-gtkasp2php.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{_bindir}/gtk%{name}
+Name=Asp2Php
+Comment=Gtk frontend to asp2php
+Icon=%{name}
+Categories=X-MandrivaLinux-MoreApplications-Development-Tools;Development;
 EOF
 
 %post -n gtkasp2php
@@ -86,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 #%{_libdir}/gtkasp2php/*.xpm
 #%{_libdir}/gtkasp2php/*.png
 #%{_libdir}/gtkasp2php/asp2php
-%{_menudir}/gtk%{name}
+%{_datadir}/applications/mandriva-gtk%{name}.desktop
 # icons
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
