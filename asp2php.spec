@@ -1,6 +1,6 @@
 %define	name	asp2php
 %define	version	0.77.1
-%define	release	%mkrel 1
+%define	release	%mkrel 2
 
 
 Name:		%{name}
@@ -20,8 +20,8 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 asp2php is a program which can help you convert Micro$oft (tm) Active Server
 Pages (tm) to PHP files.
 
-Install this if you intend to migrate from Microsuck, umm, I mean Micro$oft
-(tm) Internet Information Server (tm) to PHP.
+Install this if you intend to migrate from Micro$oft(tm) Internet Information
+Server(tm) to PHP.
 
 %package -n gtkasp2php
 Summary:	Graphical front-end for asp2php
