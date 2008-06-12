@@ -64,11 +64,15 @@ Icon=%{name}
 Categories=X-MandrivaLinux-MoreApplications-Development-Tools;Development;
 EOF
 
+%if %mdkversion < 200900
 %post -n gtkasp2php
 %{update_menus}
+%endif
 
+%if %mdkversion < 200900
 %postun -n gtkasp2php
 %{clean_menus}
+%endif
 
 
 %clean
