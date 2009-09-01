@@ -1,6 +1,6 @@
 %define	name	asp2php
 %define	version	0.77.1
-%define	release	%mkrel 2
+%define	release	%mkrel 3
 
 
 Name:		%{name}
