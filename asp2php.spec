@@ -97,3 +97,42 @@ rm -rf $RPM_BUILD_ROOT
 %{_liconsdir}/%{name}.png
 
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.77.1-4mdv2011.0
++ Revision: 616607
+- the mass rebuild of 2010.0 packages
+
+* Tue Sep 01 2009 Thierry Vignaud <tv@mandriva.org> 0.77.1-3mdv2010.0
++ Revision: 423963
+- rebuild
+
+* Thu Jun 12 2008 Pixel <pixel@mandriva.com> 0.77.1-2mdv2009.0
++ Revision: 218429
+- rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Mon Feb 11 2008 Thierry Vignaud <tv@mandriva.org> 0.77.1-2mdv2008.1
++ Revision: 165294
+- fix description
+
+* Thu Jan 03 2008 Thierry Vignaud <tv@mandriva.org> 0.77.1-1mdv2008.1
++ Revision: 142728
+- auto-convert XDG menu entry
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Fri Dec 22 2006 Oden Eriksson <oeriksson@mandriva.com> 0.77.1-1mdv2007.0
++ Revision: 101611
+- Import asp2php
+
+* Wed May 24 2006 Emmanuel Andry <eandry@mandriva.org> 0.77.1-1mdk
+- 0.77.1
+- mkrel
+
+* Wed Feb 02 2005 Lenny Cartier <lenny@mandrakesoft.com> 0.76.23-1mdk
+- 0.76.23
+
