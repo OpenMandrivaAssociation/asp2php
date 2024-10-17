@@ -13,7 +13,7 @@ Source0:	%{name}-%{version}.tar.bz2
 Source11:	%{name}-16.png
 Source12:	%{name}-32.png
 Source13:	%{name}-48.png
-URL:		http://asp2php.naken.cc/
+URL:		https://asp2php.naken.cc/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
