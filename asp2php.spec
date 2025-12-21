@@ -28,6 +28,7 @@ Summary:	Graphical front-end for asp2php
 Group:		Development/Other
 License:	GPL
 Requires:	asp2php
+BuildRequires:	make
 BuildRequires:	gtk+-devel >= 1.2.0
 
 %description -n gtkasp2php
